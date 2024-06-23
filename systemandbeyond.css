@@ -2,7 +2,22 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url('./sbwallpaper.jpg');
+    /* background-image: url('./sbwallpaper.jpg'); */
+    background: rgb(143,189,255);
+    background: linear-gradient(90deg, rgba(143,189,255,1) 0%, rgba(204,231,255,1) 50%, rgba(143,189,255,1) 100%);
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-container{
+    height: 50%;
+}
+.logo{
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .text h1{
@@ -10,12 +25,29 @@ body{
     font-family: "Ubuntu", sans-serif;
     font-weight: 1000;
     font-style: italic;
+    font-size: 5rem;
 }
 .container{
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
+
+@media only screen and (max-width: 768px) {
+    .img-container{
+        height: 30%;
+    }
+    .logo{
+        max-height: 100%;
+        max-width: 100%;
+    }
+    
+    .text h1{
+        color: white;
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 1000;
+        font-style: italic;
+        font-size: 3rem;
+    }
+} 
 
